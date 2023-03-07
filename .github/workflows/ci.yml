@@ -24,7 +24,7 @@ jobs:
           path: ./d2chaos/out
 
       - name: Run Stoat Action
-        uses: stoat-dev/stoat-action@v0
+        uses: stoat-dev/stoat-action@liren/improve-image-diff
         if: always()
 
   nofixups:
@@ -38,5 +38,5 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
 
       - name: Run Stoat Action
-        uses: stoat-dev/stoat-action@v0
+        uses: stoat-dev/stoat-action@liren/improve-image-diff
         if: always()
