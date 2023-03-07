@@ -22,6 +22,11 @@ jobs:
         with:
           name: d2chaos
           path: ./d2chaos/out
+
+      - name: Run Stoat Action
+        uses: stoat-dev/stoat-action@v0
+        if: always()
+
   nofixups:
     runs-on: ubuntu-latest
     steps:
@@ -31,3 +36,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets._GITHUB_TOKEN }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+      - name: Run Stoat Action
+        uses: stoat-dev/stoat-action@v0
+        if: always()
