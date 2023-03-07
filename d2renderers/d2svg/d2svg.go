@@ -1956,6 +1956,14 @@ func singleThemeRulesets(themeID int64) (rulesets string, err error) {
 	}
 	out += fmt.Sprintf(".sketch-overlay-%s{fill:url(#streaks-%s);mix-blend-mode:%s}", color.N7, lc, blendMode(lc))
 
+	if theme.IsDark() {
+		out += fmt.Sprintf(".light-code{display: none}")
+		out += fmt.Sprintf(".dark-code{display: block}")
+	} else {
+		out += fmt.Sprintf(".light-code{display: block}")
+		out += fmt.Sprintf(".dark-code{display: none}")
+	}
+
 	return out, nil
 }
 
