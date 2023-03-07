@@ -6,8 +6,8 @@ plugins:
     enabled: true
   image_diff:
     renderers:
-      image: d2renderers/d2sketch/testdata/app_shapes/sketch.exp.svg
-      baseline: d2renderers/d2sketch/testdata/app_shapes/sketch.exp.svg
+      image: d2renderers/d2sketch/testdata/all_shapes/sketch.exp.svg
+      baseline: d2renderers/d2sketch/testdata/all_shapes/sketch.exp.svg
 #  static_hosting:
 #    your_unique_id:
 #      metadata:
