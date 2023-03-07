@@ -4,6 +4,9 @@ enabled: true
 plugins:
   job_runtime:
     enabled: true
+  image_diff:
+    renderers:
+      image: d2renderers/d2sketch/testdata/app_shapes/sketch.exp.svg
 #  static_hosting:
 #    your_unique_id:
 #      metadata:
